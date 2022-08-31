@@ -1,0 +1,24 @@
+{
+  "name": "ecmascript",
+  "version": "1.0.0",
+  "description": "Platzi Course - 'Curso de ECMAScript 6+' - Practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeooZeballos/ECMAScript.git"
+  },
+  "keywords": [
+    "ecmascript",
+    "javascript",
+    "node"
+  ],
+  "author": "Leonel Zeballos - zeballosleonel3@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LeooZeballos/ECMAScript/issues"
+  },
+  "homepage": "https://github.com/LeooZeballos/ECMAScript#readme"
+}
