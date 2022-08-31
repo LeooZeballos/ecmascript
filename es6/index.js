@@ -75,3 +75,56 @@ let education = ['David', ...team1, ...team2];
 {
     var globalVar = 'Global Var';
 }
+
+// --------------------------------------------------------------
+
+// * Object Short Syntax
+
+let nombre = 'Leonel';
+let edad = 21;
+
+// ! before
+obj = { nombre: nombre, edad: edad };
+console.log(obj);
+
+// * es6
+obj2 = { nombre, edad };
+console.log(obj2);
+
+// --------------------------------------------------------------
+
+// * Arrow Functions
+const names = [
+    { name: 'Juan', age: 20 },
+    { name: 'Maria', age: 21 },
+    { name: 'Pedro', age: 22 }
+];
+
+// ! before
+let listOfNames = names.map(function (item) {
+    return item.name;
+});
+console.log(listOfNames);
+
+// * es6
+let listOfNames2 = names.map(item => item.name);
+console.log(listOfNames2);
+
+// --------------------------------------------------------------
+
+// * Promises
+const helloPromise = () => {
+    return new Promise((resolve, reject) => {
+        if (true) {
+            resolve('Hey!!');
+        } else {
+            reject('Ups!!');
+        }
+    });
+}
+
+helloPromise()
+    .then(response => console.log(response))
+    .catch(error => console.log(error));
+
+// --------------------------------------------------------------
