@@ -20,15 +20,15 @@ newFunction2();
 
 // * Concatenacion de Strings con ✨Template Literals✨
 
-let hello = 'Hello';
+let helloo = 'Hello';
 let world = 'World';
 
 // ! before
-let epicPhrase = hello + ' ' + world;
+let epicPhrase = helloo + ' ' + world;
 console.log(epicPhrase);
 
 // * es6
-let epicPhrase2 = `${hello} ${world}`;
+let epicPhrase2 = `${helloo} ${world}`;
 console.log(epicPhrase2);
 
 // --------------------------------------------------------------
@@ -126,5 +126,46 @@ const helloPromise = () => {
 helloPromise()
     .then(response => console.log(response))
     .catch(error => console.log(error));
+
+// --------------------------------------------------------------
+
+// * Clases
+class Calculator {
+    constructor() {
+        this.valueA = 0;
+        this.valueB = 0;
+    }
+    sum(valueA, valueB) {
+        this.valueA = valueA;
+        this.valueB = valueB;
+        return this.valueA + this.valueB;
+    }
+}
+
+const calc = new Calculator();
+console.log(calc.sum(2, 2));
+
+// --------------------------------------------------------------
+
+// * Modules
+const hello = require('./module');
+console.log(hello());
+
+// --------------------------------------------------------------
+
+// * Generators
+function* helloWorld() {
+    if (true) {
+        yield 'Hello, ';
+    }
+    if (true) {
+        yield 'World';
+    }
+}
+
+const generatorHelloWorld = helloWorld();
+console.log(generatorHelloWorld.next().value);
+console.log(generatorHelloWorld.next().value);
+console.log(generatorHelloWorld.next().value);
 
 // --------------------------------------------------------------
